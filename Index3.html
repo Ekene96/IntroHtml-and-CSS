@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <title>Grid system Website</title>
+
+    <style>
+
+        .wrappert{
+            display: grid;
+            grid-template-columns:repeat(4, 1fr);
+            grid-auto-rows: minmax(200px, auto);
+            grid-gap: 3em;
+            justify-items: stretch;
+            align-items: stretch;
+            background: #443;
+            color: white;
+            height: 50vh;
+
+            width: calc(100vw - 20px);
+           font-size: 15px;
+            box-sizing: border-box;
+
+        }
+
+
+       strong{
+         font-family: sans-serif;
+         font-size: 15px;
+         color: #111;
+       }
+
+
+        .boxd1 ul li{
+/*            align-self: start;*/
+           grid-column: 1;
+           text-align: justify;
+           list-style: none;
+           line-height: 1.6;
+           padding: 2px 5px;
+           margin: 2px 7px;
+
+        }
+
+        .boxd2 ul li{
+/*           align-self: end; */
+            grid-column: 2;
+            text-align: justify;
+            list-style: none;
+            line-height: 1.6;
+            padding: 2px 5px;
+            margin: 2px 7px;
+
+        }
+
+        .boxd3 ul li{
+/*            justify-self: end;*/
+            grid-column: 3;
+            text-align: justify;
+            list-style: none;
+            line-height: 1.6;
+            padding: 2px 5px;
+            margin: 2px 7px;
+
+        }
+
+        .boxd4 ul li{
+            grid-column: 4;
+            text-align: justify;
+            list-style: none;
+            line-height: 1.6;
+            padding: 2px 5px;
+            margin: 2px 7px;
+          }
+
+
+
+            /* border: 1px solid #333; */
+        /* } */
+
+        /* .wrapper > div{
+           background: #eee;
+            padding: 1em;
+
+        }
+
+        .wrapper >div:nth-child(odd){
+            background: #ddd;
+        } */
+
+
+
+        /* .nested{
+          display: flex;
+          flex-direction: column;
+            /* display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            /* grid-auto-rows: 70px; */
+            /* grid-gap: 2em;
+            justify-content: end;
+            align-items: baseline; */
+
+        /* } */
+        /* .nested> div{
+          padding: 2px 2px;
+          margin: 20px; */
+            /* border:#333 1px solid;
+            padding: 20px;
+            /* margin-top: 40px; */
+
+
+
+        }
+
+    </style>
+
+
+
+
+
+
+    </head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body>
+
+
+
+
+
+    <div class="wrappert">
+
+
+
+        <div class="boxd1">
+          <ul>
+          <li><strong>Our Products</strong></li>
+         <li>SmartPhones</li>
+         <li>SmartTv's</li>
+         <li>Tablets</li>
+         <li>Laptops</li>
+       </ul>
+
+
+        </div>
+        <div class=" boxd2">
+
+          <ul>
+            <li><strong>Make Money With us</strong></li>
+          <li>Sell On TechInfo</li>
+          <li>Sell your Services on TechInfo</li>
+          <li>Become an Affiliate</li>
+          <li>Advertise Your Products</li>
+          <li>See all<i class="fa fa-angle-right" aria-hidden="true" style="padding: 0 4px"></i></li>
+        </ul>
+
+        </div>
+        <div class=" boxd3">
+          <ul>
+          <li><strong>TechInfo Payment Products</strong></li>
+          <li>TechInfo Rewards Visa Signature Cards</li>
+          <li>TechInfo.com Store Card</li>
+          <li>TechInfo Business Card</li>
+          <li>Shop With Points</li>
+          <li>Reload Your Balance</li>
+        </ul>
+        </div>
+        <div class="boxd4">
+          <ul>
+        <li><strong>Let Us Help You</strong></li>
+        <li>Your Account</li>
+        <li>Your Orders</li>
+        <li>Shipping Rates & Policies</li>
+        <li>Returns & Replacements</li>
+        <li>Manage Your Content and Devices</li>
+        <li>Help</li>
+      </ul>
+
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </html>

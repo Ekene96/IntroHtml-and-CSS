@@ -1,0 +1,889 @@
+body {
+  margin: 0 auto;
+  padding: 0;
+  background: #2d3436;
+}
+
+.nav ul:not(.logo-image) {
+  list-style: none;
+  background-color: #111;
+/*  opacity: 50%;*/
+  text-align: center;
+ 
+    }
+
+
+.nav ul  {
+    display: grid;
+    grid-template-columns: repeat(8,   1fr);
+/*    grid-auto-rows: minmax(10px, auto);*/
+    grid-gap: 2em;
+    align-items: center;
+    justify-content: end;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    width: 100%;
+     
+
+  }
+
+
+
+
+
+.nav li {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+  border-bottom: 1px solid #888;
+    
+}
+
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+
+}
+
+.nav a:hover {
+  background-color: #005f5f;
+}
+
+
+
+
+
+/*Logo style*/
+
+.logo-image{
+    font-family: Catamaran;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-style: oblique;
+}
+
+/*banner style*/
+
+.banner{
+
+    width: 100%;
+    height: calc(100vh - 100px);
+    background-image: url('');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    opacity: 3;
+
+    display: table;
+
+}
+
+.vertical-center-box{
+   display: table-cell;
+   vertical-align: middle;
+}
+
+
+.banner h2 {
+
+    font-family: Coromorant Garamond;
+    font-weight: 900;
+    color: hotpink;
+    text-align: center;
+    text-shadow: 2px 2px 8px #111;
+    line-height: 70px;
+    font-size: 60px;
+
+}
+
+
+
+.banner h1{
+    font-family: Catamaran;
+    font-weight: 200;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 8px #111;
+    line-height: 40px ;
+    font-size: 28px;
+    font-style: italic;
+
+
+}
+
+
+
+
+
+
+/*Section second style starts here*/
+
+
+.sales-images-box{
+
+    width: 100%;
+    height: calc(100vh - 100px);
+    background-image: url('diette-henderson-440594-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: -40px;
+    background-color: var(--primary);
+
+}
+
+ .sales-images-box h1{font-family: Coromorant Garamond;
+    font-weight: 900;
+    color: hotpink;
+    text-align: center;
+    text-shadow: 2px 2px 8px #111;
+    line-height: 70px;
+    font-size: 60px;
+
+}
+
+.sales-images-box p{
+    font-weight: 300;
+    color: #111;
+    text-align: center;
+    text-shadow: 2px 2px 8px #111; ;
+    line-height: 40px;
+    font-size: 24px;
+}
+
+.sales-images-box #move  {
+    color: darkblue;
+    text-align: center;
+    font-family: fantasy;
+    font-size: 20px;
+    cursor: default;
+
+
+}
+
+
+
+
+/* flex-box start here*/
+
+.product-feature{
+    text-align: center;
+    font-family: fantasy;
+    text-shadow: 2px -20px 5px pink;
+    font-weight: 500;
+
+}
+
+
+
+.flexbox-container{
+    max-width: 1400px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.Main-first{
+    padding: 20px;
+    box-sizing: border-box;
+    flex-basis: 45%;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+/*Flexbox style*/
+
+
+/*
+.flex-box-container {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: flex-start;
+
+}
+
+
+.flex-box-container > div h2, h6{
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: flex-start;
+}
+
+
+*/
+
+
+
+
+.banner2{
+
+    width: 100%;
+    height: calc(100vh - 100px);
+    background-image: url('blackberry-2690103_1920.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: table;
+
+}
+
+.vertical-center-box{
+   display: table-cell;
+   vertical-align: middle;
+}
+
+
+.banner2 h2 {
+    font-family: Coromorant Garamond;
+    font-weight: 900;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 8px #111;
+    line-height: 70px;
+    font-size: 60px;
+
+}
+
+
+
+.banner2 h1{
+    font-family: Catamaran;
+    font-weight: 200;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 8px #111;
+    line-height: 40px ;
+    font-size: 28px;
+    font-style: italic;
+
+
+}
+
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+.grid {
+  min-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.grid > div {
+  display: flex;
+  flex-basis: calc(33.33% - 14px);
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* .grid > div:last-child {
+  display: flex;
+  margin-top: 0px;
+  flex-basis: calc(100% - 22px);
+  justify-content: center;
+  flex-direction: column;
+}
+ */
+.grid > div > div {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+
+
+
+.box {
+    margin: 10px 0 10px 10px
+
+}
+.box1 {
+    background-color: red;
+    background-image: url('blackberry-priv.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-box-shadow: 25px 12px 16px -8px rgba(20,16,20,0.91);
+-moz-box-shadow: 25px 12px 16px -8px rgba(20,16,20,0.91);
+box-shadow: 25px 12px 16px -8px rgba(20,16,20,0.91);
+
+}
+.box2 {
+    background-color: orange;
+    background-image: url('blackberry2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-box-shadow: 25px 12px 16px -8px rgba(20,16,20,0.91);
+-moz-box-shadow: 25px 12px 16px -8px rgba(20,16,20,0.91);
+box-shadow: 25px 12px 16px -8px rgba(20,16,20,0.91);
+
+}
+.box3 {
+    background-color: purple;
+    background-size:  contain;
+
+    background-image: url('blackberrysideview1.jpg');
+    -webkit-box-shadow: 25px 12px 16px -8px rgba(20,16,20,0.91);
+-moz-box-shadow: 25px 12px 16px -8px rgba(20,16,20,0.91);
+box-shadow: 25px 12px 16px -8px rgba(20,16,20,0.91);
+}
+.box4 {
+    background-color: grey;
+}
+
+
+
+/*style for smartvs*/
+
+.banner3{
+
+    width: 100%;
+    height: calc(100vh - 100px);
+    background-image: url('oled-hero-image.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: table;
+
+}
+
+.vertical-center-box{
+   display: table-cell;
+   vertical-align: middle;
+}
+
+
+
+.banner3 h2 {
+    font-family: Coromorant Garamond;
+    font-weight: 900;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 8px #111;
+    line-height: 70px;
+    font-size: 60px;
+
+}
+
+.banner3 h1{
+    font-family: Catamaran;
+    font-weight: 200;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 8px #111;
+    line-height: 40px ;
+    font-size: 28px;
+    font-style: italic;
+
+
+}
+
+/*Tv smallerimages*/
+
+
+
+.wrapper::before{
+    width: 100%;
+    height: 10px;
+    background-color: var(--primary);
+    position: absolute;
+    content: "";
+    z-index: 1;
+
+}
+
+ .wrapper{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr) ;
+
+            grid-auto-rows: minmax(100px, auto);
+            grid-gap: 20px;;
+            justify-items: stretch;
+            align-items: stretch;
+
+
+        }
+
+        .box-1{
+/*            align-self: start;*/
+           grid-column: 1/3;
+           grid-row: 1/3;
+
+
+        }
+
+        .box-2{
+/*           align-self: end; */
+            grid-column: 3;
+            grid-row: 1/3;
+        }
+
+        .box-3{
+/*            justify-self: end;*/
+            grid-column: 2/4;
+            grid-row: 3;
+        }
+
+        .box-4{
+            grid-column: 1/2;
+            grid-row: 3;
+/*            border: 1px solid #333;*/
+        }
+
+        .wrapper > div{
+           background: #eee;
+            padding: 1em;
+
+        }
+
+        .wrapper >div:nth-child(1){
+            background: #ddd;
+            background-image: url('grid-1-long.jpg');
+            background-size: contain;
+/*            background-repeat: repeat;*/
+            box-shadow: var(--shadow);
+
+
+        }
+
+
+        .wrapper >div:nth-child(2){
+            background: #ddd;
+            background-image: url('grid-2-box-r22.jpg');
+            background-size: contain;
+           box-shadow: var(--shadow);
+        }
+
+        .wrapper >div:nth-child(3){
+            background: #ddd;
+            background-image: url('024_smartv-zoomin_400x300.gif');
+
+            background-size: contain;
+/*            background-repeat: no-repeat;*/
+
+            box-sizing: border-box;
+            box-shadow: 10px 10px 5px #aaaaaa;
+
+        }
+        .wrapper >div:nth-child(4){
+            background: #ddd;
+            background-image: url('grid-2-tall-C8%20(1).jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: calc(100vh - 400px);
+            grid-auto-rows: minmax(1000px, auto);
+            box-shadow: var(--shadow);
+        }
+
+
+
+/*
+    .boxes::before{
+
+    width: 100%;
+    height: 10px;
+    background-color: var(--primary);
+    position: absolute;
+    content: "";
+    z-index: 1;
+
+}
+
+*/
+
+
+
+
+/*   Boxes fa fa icons*/
+
+ :root {
+  --primary: #ddd;
+  --dark: #333;
+  --light: #fff;
+  --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+
+.boxes {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.boxxx {
+  background: var(--primary);
+  text-align: center;
+  padding: 1.5rem 2rem;
+  box-shadow: var(--shadow);
+}
+
+
+
+
+
+
+
+/*Laptops section styles*/
+
+
+.banner4{
+
+    min-width: 100%;
+    height: calc(100vh - 100px);
+    background-image: url('RE2is5r%20(1).webp');
+
+    background-position: center;
+    background-size: cover;
+    display: table;
+
+}
+
+.vertical-center-box{
+   display: table-cell;
+   vertical-align: middle;
+}
+
+
+.banner4 h2 {
+    font-family: Coromorant Garamond;
+    font-weight: 900;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 8px #111;
+    line-height: 70px;
+    font-size: 60px;
+
+}
+
+
+
+.banner4 h1{
+    font-family: Catamaran;
+    font-weight: 200;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 8px #111;
+    line-height: 40px ;
+    font-size: 28px;
+    font-style: italic;
+
+
+}
+
+
+
+/*second laptop styles*/
+
+
+.banner5{
+
+    min-width: 100%;
+    height: calc(100vh - 100px);
+    background-image: url('Surface-Laptop-2.jpeg');
+    background-repeat: no-repeat;
+
+    background-position: center;
+    background-size: cover;
+
+    display: table;
+
+
+
+}
+
+.vertical-center-box{
+   display: table-cell;
+   vertical-align: middle;
+}
+
+
+.banner5 h2 {
+    font-family: Coromorant Garamond;
+    font-weight: 900;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 8px #111;
+    line-height: 70px;
+    font-size: 60px;
+
+}
+
+
+
+.banner5 h1{
+    font-family: Catamaran;
+    font-weight: 200;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 8px #111;
+    line-height: 40px ;
+    font-size: 28px;
+    font-style: italic;
+
+
+}
+
+
+/*Tablets section*/
+
+
+.banner6{
+
+    min-width: 100%;
+    height: calc(100vh - 100px);
+    background-image: url('tabletsipad.jpg');
+
+    background-position: center;
+    background-size: cover;
+    display: table;
+
+}
+
+.vertical-center-box{
+   display: table-cell;
+   vertical-align: middle;
+}
+
+
+.banner6 h2 {
+    font-family: Coromorant Garamond;
+    font-weight: 900;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 8px #111;
+    line-height: 70px;
+    font-size: 60px;
+
+}
+
+
+
+.banner6 h1{
+    font-family: Catamaran;
+    font-weight: 200;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 8px #111;
+    line-height: 40px ;
+    font-size: 28px;
+    font-style: italic;
+
+
+}
+/*
+.banner6::after{
+    width: 100%;
+    height: 0;
+    border: 20px solid red;
+    z-index: 1;
+    background: red;
+    content: "";
+
+}
+*/
+
+
+/*
+.grid-system{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-auto-rows: minmax(60px, auto);
+
+            grid-gap: 20px;;
+
+
+
+        }
+*/
+
+
+
+
+
+
+body > .wrapper-tablets {
+  margin: 50px;
+  width: 100%;
+}
+
+.boxc {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
+
+.boxc:nth-child(even) {
+  background-color: #ccc;
+  color: #000;
+
+}
+
+    .wrapper-tablets {
+        width: 100%;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(4,  1fr);
+        grid-auto-rows: minmax(150px, auto);
+    }
+
+
+.box11{
+    background-image: url('video-what-could-be-a-new-ipad-pro.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin:border-box;
+    min-height: 200px;
+
+}
+
+
+.box22{
+    background-image: url('video-what-could-be-a-new-ipad-pro.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin:border-box;
+    min-height: 200px;
+
+}
+
+.box33{
+    background-image: url('RWiYs9.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin:border-box;
+    min-height: 200px;
+    justify-content: start;
+
+}
+
+.box44{
+    background-image: url('RWj13t.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin:border-box;
+    min-height: 200px;
+
+}
+
+
+
+
+/*foooterstyles*/
+
+
+
+
+  .wrappert{
+            display: grid;
+            grid-template-columns:repeat(4, 1fr);
+            grid-auto-rows: minmax(200px, auto);
+            grid-gap: 3em;
+            justify-items: stretch;
+            align-items: stretch;
+            background: #636e72;
+            color: white;
+            height: 50vh;
+
+            width: calc(100vw - 20px);
+           font-size: 15px;
+            box-sizing: border-box;
+
+        }
+
+
+       strong{
+         font-family: sans-serif;
+         font-size: 15px;
+         color: #111;
+       }
+
+
+        .boxd1 ul li{
+/*            align-self: start;*/
+           grid-column: 1;
+           text-align: justify;
+           list-style: none;
+           line-height: 1.6;
+           padding: 2px 5px;
+           margin: 2px 7px;
+
+        }
+
+        .boxd2 ul li{
+/*           align-self: end; */
+            grid-column: 2;
+            text-align: justify;
+            list-style: none;
+            line-height: 1.6;
+            padding: 2px 5px;
+            margin: 2px 7px;
+
+        }
+
+        .boxd3 ul li{
+/*            justify-self: end;*/
+            grid-column: 3;
+            text-align: justify;
+            list-style: none;
+            line-height: 1.6;
+            padding: 2px 5px;
+            margin: 2px 7px;
+
+        }
+
+        .boxd4 ul li{
+            grid-column: 4;
+            text-align: justify;
+            list-style: none;
+            line-height: 1.6;
+            padding: 2px 5px;
+            margin: 2px 7px;
+          }
+
+
+
+
+li > i{
+    font-size: 20px;
+    margin: 5px;
+}
+
+
+
+@media screen and (min-width: 600px) {
+  .nav li {
+    width: 120px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+  }
+
+     }
+
+
+
+
+
+
+
+  
+
+
+
